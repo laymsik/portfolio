@@ -36,3 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(typeWriter, 1000);
 });
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+            b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});

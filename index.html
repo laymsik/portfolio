@@ -53,35 +53,73 @@
     <section id="portfolio" class="animate-section">
         <div class="container">
             <h2>Портфолио</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Все работы
+                </button>
+                <button class="filter-btn" data-filter="sites">
+                    <i class="fas fa-globe"></i> Сайты
+                </button>
+                <button class="filter-btn" data-filter="3d">
+                    <i class="fas fa-cube"></i> 3D Модели
+                </button>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="./images/1.webp" alt="Проект 1" class="portfolio-img">
+
+                <div class="portfolio-item 3d">
+                    <div class="category-badge">
+                        <i class="fas fa-cube"></i> 3D
+                    </div>
+                    <div class="model-preview">
+                        <img src="./images/2.1.webp" alt="Корпоративный сайт"
+                        class="portfolio-img">
+                    </div>
                     <div class="portfolio-info">
-                        <h3>Корпоративный сайт</h3>
-                        <p>Современный корпоративный сайт с анимациями и адаптивным дизайном. Реализована система
-                            управления контентом.</p>
+                        <h3>Архитектурный рендер</h3>
+                        <p>Реалистичная 3D визуализация комнаты с рабочим местом. (Изометрия)</p>
                         <div class="portfolio-links">
-                            <a href="https://laymsik.github.io/myColorType/"><i class="fas fa-external-link-alt"></i>
-                                Посетить сайт</a>
-                            <a href="https://github.com/laymsik/myColorType"><i class="fab fa-github"></i> Исходный
-                                код</a>
+                            <a href="#"><i class="fas fa-eye"></i> Просмотр 3D</a>
+                            <a href="./files/work_room.blend" class="download-btn" download>
+                                <i class="fas fa-download"></i> Скачать
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="./images/2.webp" alt="Проект 2" class="portfolio-img">
+
+                <div class="portfolio-item sites">
+                    <div class="category-badge">
+                        <i class="fas fa-globe"></i> Сайт
+                    </div>
+                    <img src="./images/1.2.webp" alt="Корпоративный сайт"
+                        class="portfolio-img">
                     <div class="portfolio-info">
                         <h3>Информационный сайт</h3>
                         <p>Информационно-мемориальный ресурс, созданный для сохранения памяти о подвигах участников
                             Великой Отечественной войны.</p>
                         <div class="portfolio-links">
-                            <a href="https://laymsik.github.io/wow-website/"><i class="fas fa-external-link-alt"></i>
-                                Посетить сайт</a>
-                            <a href="https://github.com/laymsik/wow-website"><i class="fab fa-github"></i> Исходный
-                                код</a>
+                            <a href="https://laymsik.github.io/wow-website/"><i class="fas fa-external-link-alt"></i> Посетить сайт</a>
+                            <a href="https://github.com/laymsik/wow-website"><i class="fab fa-github"></i> Исходный код</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="portfolio-item sites">
+                    <div class="category-badge">
+                        <i class="fas fa-globe"></i> Сайт
+                    </div>
+                    <img src="./images/1.1.webp" alt="Корпоративный сайт"
+                        class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Корпоративный сайт</h3>
+                        <p>Современный корпоративный сайт с анимациями и адаптивным дизайном. Реализована система
+                            управления контентом.</p>
+                        <div class="portfolio-links">
+                            <a href="https://laymsik.github.io/myColorType/"><i class="fas fa-external-link-alt"></i> Посетить сайт</a>
+                            <a href="https://github.com/laymsik/myColorType"><i class="fab fa-github"></i> Исходный код</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
